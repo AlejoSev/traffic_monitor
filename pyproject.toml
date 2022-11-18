@@ -4,17 +4,20 @@ build-backend = "hatchling.build"
 
 [project]
 name = "traffic_monitor"
-version = "0.0.1"
+version = "0.0.4"
 authors = [
   { name="Alejo Severini Montanari", email="alejoseverini@mi.unc.edu.ar" },
 ]
 description = "Small package for traffic monitoring."
 readme = "README.md"
-requires-python = ">=3.7"
+requires-python = ">=3.6.9"
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
+]
+dependencies = [
+	'python-libpcap>=0.4.0',
 ]
 
 [project.urls]
